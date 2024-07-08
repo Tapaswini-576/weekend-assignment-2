@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>weekend assignment 2</title>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class = "verticalAlignParent">
+            <span class = "box">
+                <img src = "logo.jpeg" alt = "logo" class = "image verticalAlignTextBottom">
+                Workspace
+            </span>
+            <span class = "search">
+                <input type = "search" name="search" id = "search" class = "search-input" placeholder="Search in Customers">
+                <i class = "fa fa-fw fa-search" onclick="check()"></i>
+                <script type = "text/javascript">
+                    function check()
+                    {
+                        let ele = document.getElementById("search");
+                        let arr = ["JRYT456","UHDSG","JOHN","skadj@gmail.com","2 GB","JHSAG636","ASDFJ","ASJHSA77","SAFEF","JANE","0.4 GB","BOB","200 GB","KKHUASU33","HJHGF","CHRISSY","500 GB","SAKJHD35","REYER","KARAN","45 GB","KSAHKJ366","AFEEE","MARY","50 GB"];                        
+                        let ele1 = arr.indexOf(ele.value);
+                        if(ele1 === -1)
+                        {
+                            window.alert("Not Found");
+                        }
+                        else
+                        {
+                            window.alert("It is present in customer page");
+                        }
+                    }
+                </script>
+            </span>
+        </div>
+        <div>
+            <nav class = "navbar">
+                <span>
+                    <a href="home.html" target ="_self" class = "" onclick="activeHome()" id = "home"><i class="fa fa-fw fa-home"></i>Home</a>
+                    <a href = "customer.html" target ="_self" class = "active" onclick="activecustomer()" id = "customer"><i class = "fa fa-fw fa-users"></i>Customers</a>
+                    <a href ="department.html" target="_self" class = "" onclick="activedept()" id = "dept"><i class = "fa fa-fw fa-id-card"></i>Departments</a>
+                    <a href = "media.html" target="_self" class = "" onclick="activemedia()" id = "media"><i class = "fa fa-fw fa-photo"></i>Media</a>
+                </span>
+                <span>
+                    <a href="myaccount.html" target = "_self" class ="account-link" onclick="activeaccount()" id = "account"><i class = "fa fa-fw fa-user"></i>My Account</a>
+                </span>
+                <script type = "text/javascript">
+                    function activeHome()
+                    {
+                        document.getElementById("home").classList.add("active");
+                        document.getElementById("customer").classList.remove("active");
+                        document.getElementById("dept").classList.remove("active");
+                        document.getElementById("media").classList.remove("active");
+                        document.getElementById("account").classList.remove("active");
+                    }
+                    function activecustomer()
+                    {
+                        document.getElementById("customer").classList.add("active");
+                        document.getElementById("home").classList.remove("active");
+                        document.getElementById("dept").classList.remove("active");
+                        document.getElementById("media").classList.remove("active");
+                        document.getElementById("account").classList.remove("active");
+                    }
+                    function activedept()
+                    {
+                        document.getElementById("dept").classList.add("active");
+                        document.getElementById("home").classList.remove("active");
+                        document.getElementById("media").classList.remove("active");
+                        document.getElementById("account").classList.remove("active");
+                        document.getElementById("customer").classList.remove("active");
+                    }
+                    function activemedia()
+                    {
+                        document.getElementById("media").classList.add("active");
+                        document.getElementById("account").classList.remove("active");
+                        document.getElementById("customer").classList.remove("active");
+                        document.getElementById("dept").classList.add("active");
+                        document.getElementById("home").classList.remove("active");
+                    }
+                    function activeaccount()
+                    {
+                        document.getElementById("account").classList.add("active");
+                        document.getElementById("customer").classList.remove("active");
+                        document.getElementById("dept").classList.add("active");
+                        document.getElementById("home").classList.remove("active");
+                        document.getElementById("media").classList.add("active");
+                    }
+                </script>
+            </nav>
+        </div>
+        <div>
+            <table class = "table3">
+                <tr>
+                    <th>Customer Id</th>
+                    <th>Department Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Total Media Size</th>
+                </tr>
+                <tr>
+                    <td>JRYT456</td>
+                    <td>UHDSG</td>
+                    <td>JOHN</td>
+                    <td>skadj@gmail.com</td>
+                    <td>2 GB </td>
+                </tr>
+                <tr>
+                    <td>JHSAG636</td>
+                    <td>ASDFJ</td>
+                    <td>JANE</td>
+                    <td>skadj@gmail.com</td>
+                    <td>0.4 GB</td>
+                </tr>
+                <tr>
+                    <td>ASJHSA77</td>
+                    <td>SAFEF</td>
+                    <td>BOB</td>
+                    <td>skadj@gmail.com</td>
+                    <td>200 GB</td>
+                </tr>
+                <tr>
+                    <td>KSAHKJ366</td>
+                    <td>AFEEE</td>
+                    <td>MARY</td>
+                    <td>skadj@gmail.com</td>
+                    <td>50 GB</td>
+                </tr>
+                <tr>
+                    <td>SAKJHD35</td>
+                    <td>REYER</td>
+                    <td>KARAN</td>
+                    <td>skadj@gmail.com</td>
+                    <td>45 GB</td>
+                </tr>
+                <tr>
+                    <td>KKHUASU33</td>
+                    <td>HJHGF</td>
+                    <td>CHRISSY</td>
+                    <td>skadj@gmail.com</td>
+                    <td>500 GB</td>
+                </tr>
+                <tr style = "height : 43px">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr style = "height : 43px">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr style = "height : 43px">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr style = "height : 43px">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr style = "height : 43px">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr style = "height : 43px">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <br><br><br><br><br>
+        <div>
+            <a href = "" class = "previous box1">&#8249</a>
+            <a href = "" class = "box1">1</a>
+            <a href = "" class = "next box1">&#8250</a>
+        </div>
+        <br><br>
+    </body>
+</html>
