@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>weekend assignment 2</title>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class = "verticalAlignParent">
+            <span class = "box">
+                <img src = "logo.jpeg" alt = "logo" class = "image verticalAlignTextBottom">
+                Workspace
+            </span>
+            <span class = "search">
+                <input type = "search" name="search" id = "search" class = "search-input" placeholder="Search in Home">
+                <i class = "fa fa-fw fa-search" onclick="check()"></i>
+                <script type = "text/javascript">
+                    function check()
+                    {
+                        let ele = document.getElementById("search");
+                        let arr = ["customer","department","media","Customer","Department","Media"];
+                        let ele1 = arr.indexOf(ele.value);
+                        if(ele1 === -1)
+                        {
+                            window.alert("Not Found");
+                        }
+                        else
+                        {
+                            window.alert("It is present in Home page");
+                        }
+                    }
+                </script>
+            </span>
+        </div>
+        <div>
+            <nav class = "navbar">
+                <span>
+                    <a href="home.html" target ="_self" class = "active" onclick="activeHome()" id = "home"><i class="fa fa-fw fa-home"></i>Home</a>
+                    <a href = "customer.html" target ="_self" class = "" onclick="activecustomer()" id = "customer"><i class = "fa fa-fw fa-users"></i>Customers</a>
+                    <a href ="department.html" target="_self" class = "" onclick="activedept()" id = "dept"><i class = "fa fa-fw fa-id-card"></i>Departments</a>
+                    <a href = "media.html" target="_self" class = "" onclick="activemedia()" id = "media"><i class = "fa fa-fw fa-photo"></i>Media</a>
+                </span>
+                <span>
+                    <a href="myaccount.html" target = "_self" class ="account-link" onclick="activeaccount()" id = "account"><i class = "fa fa-fw fa-user"></i>My Account</a>
+                </span>
+                <script type = "text/javascript">
+                    function activeHome()
+                    {
+                        document.getElementById("home").classList.add("active");
+                        document.getElementById("customer").classList.remove("active");
+                        document.getElementById("dept").classList.remove("active");
+                        document.getElementById("media").classList.remove("active");
+                        document.getElementById("account").classList.remove("active");
+                    }
+                    function activecustomer()
+                    {
+                        document.getElementById("customer").classList.add("active");
+                        document.getElementById("home").classList.remove("active");
+                        document.getElementById("dept").classList.remove("active");
+                        document.getElementById("media").classList.remove("active");
+                        document.getElementById("account").classList.remove("active");
+                    }
+                    function activedept()
+                    {
+                        document.getElementById("dept").classList.add("active");
+                        document.getElementById("home").classList.remove("active");
+                        document.getElementById("media").classList.remove("active");
+                        document.getElementById("account").classList.remove("active");
+                        document.getElementById("customer").classList.remove("active");
+                    }
+                    function activemedia()
+                    {
+                        document.getElementById("media").classList.add("active");
+                        document.getElementById("account").classList.remove("active");
+                        document.getElementById("customer").classList.remove("active");
+                        document.getElementById("dept").classList.add("active");
+                        document.getElementById("home").classList.remove("active");
+                    }
+                    function activeaccount()
+                    {
+                        document.getElementById("account").classList.add("active");
+                        document.getElementById("customer").classList.remove("active");
+                        document.getElementById("dept").classList.add("active");
+                        document.getElementById("home").classList.remove("active");
+                        document.getElementById("media").classList.add("active");
+                    }
+                </script>
+            </nav>
+        </div>
+        <div class = "grid-container">
+            <div class = "grid-item1">
+                <br>
+                <h3>New Customers</h3>
+                <br><br>
+                <h1>24</h1>
+                <br>
+            </div>
+            <div class = "grid-item2">
+                <br>
+                <h3>Department Activity</h3>
+                <br><br>
+                <h1>434+</h1>
+                <br>
+            </div>
+            <div class = "grid-item3">
+                <br>
+                <h3>Total Media Size</h3>
+                <br><br>
+                <h1>10Tb</h1>
+            </div>
+        </div>
+        <div>
+            <table class = "table1">
+                <tr>
+                    <td class="heading1" colspan="5"><h1>Customers</h1></td>
+                </tr>
+                <tr>
+                    <th>Customer Id</th>
+                    <th>Department Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Total Media Size</th>
+                </tr>
+                <tr>
+                    <td>JRYT456</td>
+                    <td>UHDSG</td>
+                    <td>JOHN</td>
+                    <td>skadj@gmail.com</td>
+                    <td>2 GB </td>
+                </tr>
+                <tr>
+                    <td>JHSAG636</td>
+                    <td>ASDFJ</td>
+                    <td>JANE</td>
+                    <td>skadj@gmail.com</td>
+                    <td>0.4 GB</td>
+                </tr>
+                <tr>
+                    <td>ASJHSA77</td>
+                    <td>SAFEF</td>
+                    <td>BOB</td>
+                    <td>skadj@gmail.com</td>
+                    <td>200 GB</td>
+                </tr>
+                <tr>
+                    <td>KSAHKJ366</td>
+                    <td>AFEEE</td>
+                    <td>MARY</td>
+                    <td>skadj@gmail.com</td>
+                    <td>50 GB</td>
+                </tr>
+                <tr>
+                    <td>SAKJHD35</td>
+                    <td>REYER</td>
+                    <td>KARAN</td>
+                    <td>skadj@gmail.com</td>
+                    <td>45 GB</td>
+                </tr>
+                <tr>
+                    <td>KKHUASU33</td>
+                    <td>HJHGF</td>
+                    <td>CHRISSY</td>
+                    <td>skadj@gmail.com</td>
+                    <td>500 GB</td>
+                </tr>
+            </table>
+        </div>
+        <br><br>
+        <div>
+            <table class = "table2">
+                <tr>
+                    <td class="heading2" colspan="5"><h1>Departments</h1></td>
+                </tr>
+                <tr>
+                    <th>Department Id</th>
+                    <th>Department Incharge</th>
+                    <th>Name</th>
+                    <th>Size</th>
+                    <th>Total Media Size</th>
+                </tr>
+                <tr>
+                    <td>JRYT456</td>
+                    <td>UHDSG</td>
+                    <td>JOHN</td>
+                    <td>23</td>
+                    <td>2 GB </td>
+                </tr>
+                <tr>
+                    <td>JHSAG636</td>
+                    <td>ASDFJ</td>
+                    <td>JANE</td>
+                    <td>45</td>
+                    <td>0.4 GB</td>
+                </tr>
+                <tr>
+                    <td>ASJHSA77</td>
+                    <td>SAFEF</td>
+                    <td>BOB</td>
+                    <td>76</td>
+                    <td>200 GB</td>
+                </tr>
+                <tr>
+                    <td>KSAHKJ366</td>
+                    <td>AFEEE</td>
+                    <td>MARY</td>
+                    <td>87</td>
+                    <td>50 GB</td>
+                </tr>
+                <tr>
+                    <td>SAKJHD35</td>
+                    <td>REYER</td>
+                    <td>KARAN</td>
+                    <td>76</td>
+                    <td>45 GB</td>
+                </tr>
+                <tr>
+                    <td>KKHUASU33</td>
+                    <td>HJHGF</td>
+                    <td>CHRISSY</td>
+                    <td>78</td>
+                    <td>500 GB</td>
+                </tr>
+            </table>
+        </div>
+        <br><br>
+        <div class =  "heading3">
+            <h1>Media</h1>
+        </div>
+        <br>
+        <div class = "grid-container1">
+            <div class = "grid-item4">
+                <br>
+                <h3>Audio</h3>
+                <br><br>
+                <h3>14 TB</h3>
+                <br>
+            </div>
+            <div class = "grid-item5">
+                <br>
+                <h3>Video</h3>
+                <br><br>
+                <h3>14 TB</h3>
+                <br>
+            </div>
+            <div class = "grid-item5">
+                <br>
+                <h3>Images</h3>
+                <br><br>
+                <h3>14 TB</h3>
+                <br>
+            </div>
+            <div class = "grid-item6">
+                <br>
+                <h3>Files</h3>
+                <br><br>
+                <h3>14 TB</h3>
+                <br>
+            </div>
+        </div>
+        <br><br>
+    </body>
+</html>
