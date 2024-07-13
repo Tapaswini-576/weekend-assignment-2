@@ -15,6 +15,7 @@
     position : fixed;
     width : 100%;
     top : 0px;
+    height: 11vh;
 }
 .verticalAlignTextBottom
 {
@@ -54,8 +55,8 @@
 }
 .navbar
 {
-    top : 71px;
-    height :100%;
+    top : 11vh;
+    height : 89vh;
     width : 274px;
     background-color : #e1d5e7;
     overflow : hidden;
@@ -63,9 +64,7 @@
     position : fixed;
     display: flex;
     flex-direction: column;
-    align-content: bottom;
-    /* justify-content: space-between;  */
-    /* align-content: space-around; */
+    justify-content: space-between;
 }
 .navbar a
 {
@@ -99,6 +98,15 @@
     gap : 20px 20px;
     grid-auto-flow: row;
 }
+.stat 
+{
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.stat:hover 
+{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px #888888;
+}
 .grid-item1
 {
     margin-left : 294px;
@@ -129,11 +137,13 @@
 {
     width : 77%;
     margin-left: 294px;
+    margin-right : 20px;
     border : 1px solid #82b382;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     font-size: 18px;
     text-align: center;
+    box-shadow : 0px 4px 8px #888888;
 }
 .heading1
 {
@@ -162,6 +172,7 @@
     border-top-right-radius: 20px;
     font-size: 18px;
     text-align: center;
+    box-shadow : 0px 4px 8px #888888;
 }
 .table2 th
 {
@@ -190,6 +201,7 @@
     border : 4px double #9c6f6d;
     background-color: #f8cecc;
     margin-right : 18px;
+    box-shadow : 0px 4px 8px #888888;
 }
 .grid-container1
 {
@@ -236,6 +248,7 @@
     border : 1px solid #82b382;
     font-size: 18px;
     text-align: center;
+    box-shadow : 0px 4px 8px #888888;
 }
 .table3 th
 {
@@ -271,6 +284,7 @@
     border : 1px solid #95a2b3;
     font-size: 18px;
     text-align: center;
+    box-shadow : 0px 4px 8px #888888;
 }
 .table4 th
 {
@@ -300,6 +314,7 @@
     border : 1px solid rgb(65, 65, 255);
     background-color: rgb(167, 167, 240);
     margin-right : 20px;
+    box-shadow : 0px 4px 8px #888888;
 }
 .item1
 {
