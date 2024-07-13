@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title>weekend assignment 2</title>
+        <title>My Account Page</title>
         <link rel = "stylesheet" href = "style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -12,7 +12,7 @@
                 Workspace
             </span>
             <span class = "search">
-                <input type = "search" name="search" id = "search" class = "search-input" placeholder="Search in My Accounts">
+                <input type = "search" name="search" id = "search" class = "search-input stat" placeholder="Search in My Accounts">
                 <i class = "fa fa-fw fa-search" onclick="check()"></i>
                 <script type = "text/javascript">
                     function check()
@@ -35,61 +35,19 @@
         <div>
             <nav class = "navbar">
                 <span>
-                    <a href="home.html" target ="_self" class = "" onclick="activeHome()" id = "home"><i class="fa fa-fw fa-home"></i>Home</a>
-                    <a href = "customer.html" target ="_self" class = "" onclick="activecustomer()" id = "customer"><i class = "fa fa-fw fa-users"></i>Customers</a>
-                    <a href ="department.html" target="_self" class = "" onclick="activedept()" id = "dept"><i class = "fa fa-fw fa-id-card"></i>Departments</a>
-                    <a href = "media.html" target="_self" class = "" onclick="activemedia()" id = "media"><i class = "fa fa-fw fa-photo"></i>Media</a>
+                    <a href="home.html" target ="_self" class = "stat" onclick="activeHome()" id = "home"><i class="fa fa-fw fa-home"></i>Home</a>
+                    <a href = "customer.html" target ="_self" class = "stat" onclick="activecustomer()" id = "customer"><i class = "fa fa-fw fa-users"></i>Customers</a>
+                    <a href ="department.html" target="_self" class = "stat" onclick="activedept()" id = "dept"><i class = "fa fa-fw fa-id-card"></i>Departments</a>
+                    <a href = "media.html" target="_self" class = "stat" onclick="activemedia()" id = "media"><i class = "fa fa-fw fa-photo"></i>Media</a>
                 </span>
                 <span>
-                    <a href="myaccount.html" target = "_self" class ="account-link active" onclick="activeaccount()" id = "account"><i class = "fa fa-fw fa-user"></i>My Account</a>
+                    <a href="myaccount.html" target = "_self" class ="active stat" onclick="activeaccount()" id = "account"><i class = "fa fa-fw fa-user"></i>My Account</a>
                 </span>
-                <script type = "text/javascript">
-                    function activeHome()
-                    {
-                        document.getElementById("home").classList.add("active");
-                        document.getElementById("customer").classList.remove("active");
-                        document.getElementById("dept").classList.remove("active");
-                        document.getElementById("media").classList.remove("active");
-                        document.getElementById("account").classList.remove("active");
-                    }
-                    function activecustomer()
-                    {
-                        document.getElementById("customer").classList.add("active");
-                        document.getElementById("home").classList.remove("active");
-                        document.getElementById("dept").classList.remove("active");
-                        document.getElementById("media").classList.remove("active");
-                        document.getElementById("account").classList.remove("active");
-                    }
-                    function activedept()
-                    {
-                        document.getElementById("dept").classList.add("active");
-                        document.getElementById("home").classList.remove("active");
-                        document.getElementById("media").classList.remove("active");
-                        document.getElementById("account").classList.remove("active");
-                        document.getElementById("customer").classList.remove("active");
-                    }
-                    function activemedia()
-                    {
-                        document.getElementById("media").classList.add("active");
-                        document.getElementById("account").classList.remove("active");
-                        document.getElementById("customer").classList.remove("active");
-                        document.getElementById("dept").classList.add("active");
-                        document.getElementById("home").classList.remove("active");
-                    }
-                    function activeaccount()
-                    {
-                        document.getElementById("account").classList.add("active");
-                        document.getElementById("customer").classList.remove("active");
-                        document.getElementById("dept").classList.add("active");
-                        document.getElementById("home").classList.remove("active");
-                        document.getElementById("media").classList.add("active");
-                    }
-                </script>
             </nav>
         </div>
         <div>
             <div>
-                <img src = "image.jpg" alt="dp" class = "dp" id="profile" >
+                <img src = "image.jpg" alt="dp" class = "dp stat" id="profile" >
             </div>
             <div>
                 <label for = "upload" class = "icon"><i class = "fa fa-fw fa-pencil"></i></label>
@@ -109,7 +67,7 @@
             <div>
                 <h1 class = "align">Name</h1>
                 <br>
-                <input type="text" id = "name" value = "John Doe" class = "text align" readonly>
+                <input type="text" id = "name" value = "John Doe" class = "text align stat" readonly>
                 <label for = "name" class = "icon1"><i class = "fa fa-fw fa-pencil" id = "edit"></i></label>
             </div>
             <script>
@@ -127,7 +85,7 @@
             <div>
                 <h1 class = "align">Email</h1>
                 <br>
-                <input type="text" id = "email" value = "example@gmail.com" class = "text align" readonly>
+                <input type="text" id = "email" value = "example@gmail.com" class = "text align stat" readonly>
                 <label for = "email" class = "icon1"><i class = "fa fa-fw fa-pencil" id = "edit1"></i></label>
             </div>
             <script>
@@ -145,7 +103,7 @@
             <div>
                 <h1 class = "align">Phone Number</h1>
                 <br>
-                <input type="text" id = "phno" value = "8457940348" class = "text align" readonly>
+                <input type="text" id = "phno" value = "8457940348" class = "text align stat" readonly>
                 <label for = "phno" class = "icon1"><i class = "fa fa-fw fa-pencil" id = "edit2"></i></label>
             </div>
             <script>
@@ -163,7 +121,7 @@
             <div>
                 <h1 class = "align">Date Of Birth</h1>
                 <br>
-                <input type="text" id = "date" value = "July 16, 1999" class = "text align" readonly>
+                <input type="text" id = "date" value = "July 16, 1999" class = "text align stat" readonly>
                 <label for = "date" class = "icon1"><i class = "fa fa-fw fa-pencil" id = "edit3"></i></label>
             </div>
             <script>
@@ -178,8 +136,8 @@
         </div>
         <br><br>
         <div class = "align">
-            <button id="save" class = "text1">Save</button>
-            <button id="cancel" class = "text2">Cancel</button>
+            <button id="save" class = "text1 stat">Save</button>
+            <button id="cancel" class = "text2 stat">Cancel</button>
             <script>
                 let prof = "image.jpg";
                 let orig1 = "John Doe";
