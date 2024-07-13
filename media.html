@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title>weekend assignment 2</title>
+        <title>Media Page</title>
         <link rel = "stylesheet" href = "style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -12,7 +12,7 @@
                 Workspace
             </span>
             <span class = "search">
-                <input type = "search" name="search" id = "search" class = "search-input" placeholder="Search in Media">
+                <input type = "search" name="search" id = "search" class = "search-input stat" placeholder="Search in Media">
                 <i class = "fa fa-fw fa-search" onclick="check()"></i>
                 <script type = "text/javascript">
                     function check()
@@ -35,56 +35,14 @@
         <div>
             <nav class = "navbar">
                 <span>
-                    <a href="home.html" target ="_self" class = "" onclick="activeHome()" id = "home"><i class="fa fa-fw fa-home"></i>Home</a>
-                    <a href = "customer.html" target ="_self" class = "" onclick="activecustomer()" id = "customer"><i class = "fa fa-fw fa-users"></i>Customers</a>
-                    <a href ="department.html" target="_self" class = "" onclick="activedept()" id = "dept"><i class = "fa fa-fw fa-id-card"></i>Departments</a>
-                    <a href = "media.html" target="_self" class = "active" onclick="activemedia()" id = "media"><i class = "fa fa-fw fa-photo"></i>Media</a>
+                    <a href="home.html" target ="_self" class = "stat" onclick="activeHome()" id = "home"><i class="fa fa-fw fa-home"></i>Home</a>
+                    <a href = "customer.html" target ="_self" class = "stat" onclick="activecustomer()" id = "customer"><i class = "fa fa-fw fa-users"></i>Customers</a>
+                    <a href ="department.html" target="_self" class = "stat" onclick="activedept()" id = "dept"><i class = "fa fa-fw fa-id-card"></i>Departments</a>
+                    <a href = "media.html" target="_self" class = "active stat" onclick="activemedia()" id = "media"><i class = "fa fa-fw fa-photo"></i>Media</a>
                 </span>
                 <span>
-                    <a href="myaccount.html" target = "_self" class ="account-link" onclick="activeaccount()" id = "account"><i class = "fa fa-fw fa-user"></i>My Account</a>
+                    <a href="myaccount.html" target = "_self" class ="stat" onclick="activeaccount()" id = "account"><i class = "fa fa-fw fa-user"></i>My Account</a>
                 </span>
-                <script type = "text/javascript">
-                    function activeHome()
-                    {
-                        document.getElementById("home").classList.add("active");
-                        document.getElementById("customer").classList.remove("active");
-                        document.getElementById("dept").classList.remove("active");
-                        document.getElementById("media").classList.remove("active");
-                        document.getElementById("account").classList.remove("active");
-                    }
-                    function activecustomer()
-                    {
-                        document.getElementById("customer").classList.add("active");
-                        document.getElementById("home").classList.remove("active");
-                        document.getElementById("dept").classList.remove("active");
-                        document.getElementById("media").classList.remove("active");
-                        document.getElementById("account").classList.remove("active");
-                    }
-                    function activedept()
-                    {
-                        document.getElementById("dept").classList.add("active");
-                        document.getElementById("home").classList.remove("active");
-                        document.getElementById("media").classList.remove("active");
-                        document.getElementById("account").classList.remove("active");
-                        document.getElementById("customer").classList.remove("active");
-                    }
-                    function activemedia()
-                    {
-                        document.getElementById("media").classList.add("active");
-                        document.getElementById("account").classList.remove("active");
-                        document.getElementById("customer").classList.remove("active");
-                        document.getElementById("dept").classList.add("active");
-                        document.getElementById("home").classList.remove("active");
-                    }
-                    function activeaccount()
-                    {
-                        document.getElementById("account").classList.add("active");
-                        document.getElementById("customer").classList.remove("active");
-                        document.getElementById("dept").classList.add("active");
-                        document.getElementById("home").classList.remove("active");
-                        document.getElementById("media").classList.add("active");
-                    }
-                </script>
             </nav>
         </div>
         <div class = "heading4">
@@ -92,22 +50,22 @@
         </div>
         <br>
         <div class = "grid-container1">
-            <div class = "item1">
+            <div class = "item1 stat">
                 <a href = "image.jpg" target = "_blank"><i class = "fa fa-fw fa-photo"></i></a>
             </div>
-            <div class = "item2">
+            <div class = "item2 stat">
                 <a href = "image.jpg" target = "_blank"><i class = "fa fa-fw fa-photo"></i></a>
             </div>
-            <div class = "item3">
+            <div class = "item3 stat">
                 <a href = "image.jpg" target = "_blank"><i class = "fa fa-fw fa-photo"></i></a>
             </div>
-            <div class = "item4">
+            <div class = "item4 stat">
                 <a href = "image.jpg" target = "_blank"><i class = "fa fa-fw fa-photo"></i></a>
             </div>
-            <div class = "item5">
+            <div class = "item5 stat">
                 <a href = "image.jpg" target = "_blank"><i class = "fa fa-fw fa-photo"></i></a>
             </div>
-            <div class = "item6">
+            <div class = "item6 stat">
                 <a href = "image.jpg" target = "_blank"><i class = "fa fa-fw fa-photo"></i></a>
             </div>
         </div>
@@ -116,22 +74,22 @@
         </div>
         <br>
         <div class = "grid-container1">
-            <div class = "item1">
+            <div class = "item1 stat">
                 <a href="video.mp4" target = "_blank"><i class = "fa fa-fw fa-play"></i></a>
             </div>
-            <div class = "item2">
+            <div class = "item2 stat">
                 <a href="video.mp4" target = "_blank"><i class = "fa fa-fw fa-play"></i></a>
             </div>
-            <div class = "item3">
+            <div class = "item3 stat">
                 <a href="video.mp4" target = "_blank"><i class = "fa fa-fw fa-play"></i></a>
             </div>
-            <div class = "item4">
+            <div class = "item4 stat">
                 <a href="video.mp4" target = "_blank"><i class = "fa fa-fw fa-play"></i></a>
             </div>
-            <div class = "item5">
+            <div class = "item5 stat">
                 <a href="video.mp4" target = "_blank"><i class = "fa fa-fw fa-play"></i></a>
             </div>
-            <div class = "item6">
+            <div class = "item6 stat">
                 <a href="video.mp4" target = "_blank"><i class = "fa fa-fw fa-play"></i></a>
             </div>
         </div>
@@ -140,22 +98,22 @@
         </div>
         <br>
         <div class = "grid-container1">
-            <div class = "item1">
+            <div class = "item1 stat">
                 <a href = "audio.mp3" target = "_blank"><i class = "fa fa-fw fa-music"></i></a>
             </div>
-            <div class = "item2">
+            <div class = "item2 stat">
                 <a href = "audio.mp3" target = "_blank"><i class = "fa fa-fw fa-music"></i></a>
             </div>
-            <div class = "item3">
+            <div class = "item3 stat">
                 <a href = "audio.mp3" target = "_blank"><i class = "fa fa-fw fa-music"></i></a>
             </div>
-            <div class = "item4">
+            <div class = "item4 stat">
                 <a href = "audio.mp3" target = "_blank"><i class = "fa fa-fw fa-music"></i></a>
             </div>
-            <div class = "item5">
+            <div class = "item5 stat">
                 <a href = "audio.mp3" target = "_blank"><i class = "fa fa-fw fa-music"></i></a>
             </div>
-            <div class = "item6">
+            <div class = "item6 stat">
                 <a href = "audio.mp3" target = "_blank"><i class = "fa fa-fw fa-music"></i></a>
             </div>
         </div>
